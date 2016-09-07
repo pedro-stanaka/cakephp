@@ -195,7 +195,7 @@ class TreeBehavior extends Behavior
             'order' => $config['left'],
         ]);
 
-        /** @var \Cake\ORM\Entity $node */
+        /* @var \Cake\ORM\Entity $node */
         foreach ($children as $node) {
             $parentIdValue = $node->get($config['parent']);
             $depth = $depths[$parentIdValue] + 1;
